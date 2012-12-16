@@ -22,7 +22,7 @@ subp = subprocess.Popen([
     os.path.join(root, "main.less")
 ], stdout = subprocess.PIPE)
 
-with open(os.path.join(root, "public", "main.css"), "wb") as css:
+with open(os.path.join(root, "public", "css", "main.css"), "wb") as css:
     css.write(subp.stdout.read())
 
 subp.wait()
