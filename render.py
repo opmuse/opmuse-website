@@ -18,7 +18,7 @@ with open(os.path.join(root, "public", "index.html"), "w") as index:
     index.write(template.replace('MARKDOWN', html.decode('utf8')))
 
 subp = subprocess.Popen([
-    os.path.join(root, "vendor", "less.js", "bin", "lessc"),
+    os.path.join(root, "node_modules", "less", "bin", "lessc"),
     os.path.join(root, "main.less")
 ], stdout = subprocess.PIPE)
 

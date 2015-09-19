@@ -3,7 +3,9 @@ opmu.se
 
 Run...
 
-    $ python3 render.py
+    $ npm install
+    $ ./bower install
+    $ python render.py
 
 .. and you'll get index.html and main.css in public.
 
