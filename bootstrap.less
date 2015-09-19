@@ -1,10 +1,15 @@
+@bootswatch_theme: "journal";
+
+@import "vendor/bootswatch/@{bootswatch_theme}/variables.less";
+
 // Core variables and mixins
-@import "variables.less"; // Modify this for custom colors, font-sizes, etc
 @import "vendor/bootstrap/less/mixins.less";
 
-// Reset
+// Reset and dependencies
 @import "vendor/bootstrap/less/normalize.less";
 @import "vendor/bootstrap/less/print.less";
+// @import "glyphicons.less";
+@import "vendor/Font-Awesome/less/font-awesome.less";
 
 // Core CSS
 @import "vendor/bootstrap/less/scaffolding.less";
@@ -17,8 +22,6 @@
 
 // Components
 @import "vendor/bootstrap/less/component-animations.less";
-// @import "glyphicons.less";
-@import "vendor/Font-Awesome/less/font-awesome.less";
 @import "vendor/bootstrap/less/dropdowns.less";
 @import "vendor/bootstrap/less/button-groups.less";
 @import "vendor/bootstrap/less/input-groups.less";
@@ -36,6 +39,7 @@
 @import "vendor/bootstrap/less/media.less";
 @import "vendor/bootstrap/less/list-group.less";
 @import "vendor/bootstrap/less/panels.less";
+@import "vendor/bootstrap/less/responsive-embed.less";
 @import "vendor/bootstrap/less/wells.less";
 @import "vendor/bootstrap/less/close.less";
 
@@ -48,3 +52,5 @@
 // Utility classes
 @import "vendor/bootstrap/less/utilities.less";
 @import "vendor/bootstrap/less/responsive-utilities.less";
+
+@import "vendor/bootswatch/@{bootswatch_theme}/bootswatch.less";
